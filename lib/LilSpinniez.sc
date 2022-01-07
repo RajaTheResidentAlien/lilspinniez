@@ -28,7 +28,7 @@ Engine_LilSpinniez : CroneEngine {
 		      input = AllpassN.ar(input, 0.050, [0.050.rand, 0.050.rand], 1)*Lag.kr(noff, 0.01);
 		      input = AllpassN.ar(input, 0.050, [0.050.rand, 0.050.rand], 1)*Lag.kr(noff, 0.01);
 		      input = AllpassN.ar(input, 0.050, [0.050.rand, 0.050.rand], 1)*Lag.kr(noff, 0.01);
-		      send = receive + input;
+		      send = (receive + input).tanh;
 		      Out.ar(out, send);
 		}).add;
                 
