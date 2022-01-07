@@ -11,7 +11,7 @@ lamp_full = types.LampState.ON; lamp_dull = types.LampState:new(0.5, 0); lamp_of
 block = blocks.Block:new(3, 3):fill(lamp_dull); frame = frames.Frame:new():add(block, 1, 1)
 -- Attach shado machinery to grid:
 local g = grid.connect()
-local renderer = renderers.VariableBlockRenderer:new(16, 16, g)
+local renderer = renderers.VariableBlockRenderer:new(16, 8, g)
 
 function init()
     renderer:render(frame); clock.run(rotate,bdiv)
