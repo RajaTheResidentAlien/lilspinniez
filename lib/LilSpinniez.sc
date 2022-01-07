@@ -39,8 +39,8 @@ Engine_LilSpinniez : CroneEngine {
                       Synth(\simpl, [\out,ot,\freq,frq,\amp,am*0.8,\md1,m1,\md2,m2,\rls,rl,\pos,ps], target: pg);
                     },
                     { ot=fx;
-                      Synth(\simpl, [\out,ot,\freq,frq,\amp,am*0.5,\md1,m1*2.0,\md2,m2*2.0,\rls,rl*1.5,\pos,ps], target: pg);
-                      Synth(\simpl, [\out,ot,\freq,frq,\amp,am*0.6,\md1,m1,\md2,m2,\rls,rl*1.1,\pos,ps], target: pg);
+                      Synth(\simpl, [\out,ot,\freq,frq,\amp,am*0.4,\md1,m1*2.0,\md2,m2*2.0,\rls,rl*1.5,\pos,ps], target: pg);
+                      Synth(\simpl, [\out,ot,\freq,frq,\amp,am*0.5,\md1,m1,\md2,m2,\rls,rl*1.1,\pos,ps], target: pg);
                     });
     });
     
