@@ -40,7 +40,7 @@ Engine_LilSpinniez : CroneEngine {
                     },
                     { ot=fx;
                       Synth(\simpl, [\out,ot,\freq,frq,\amp,am*0.5,\md1,m1*2.0,\md2,m2*2.0,\rls,rl*1.5,\pos,ps], target: pg);
-                      Synth(\simpl, [\out,ot,\freq,frq,\amp,am*0.5,\md1,m1*2.0,\md2,m2*2.0,\rls,rl*1.5,\pos,ps], target: pg);
+                      Synth(\simpl, [\out,ot,\freq,frq,\amp,am*0.5,\md1,m1*1.618,\md2,m2*1.618,\rls,rl*1.1,\pos,ps], target: pg);
                     });
     });
     
