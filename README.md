@@ -1,5 +1,5 @@
 # lilspinniez
-lil thing i made with Nick Rothwell's 'shado'(https://github.com/cassiel/shado)
+lil thing i made using 'shado' by Nick Rothwell(https://github.com/cassiel/shado)
 
 from within maiden, under 'matron' tab, type:
 >;install https://github.com/RajaTheResidentAlien/lilspinniez
