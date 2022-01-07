@@ -10,8 +10,8 @@ xpos=0; ypos=0; sx=3; centerX=4; centerY=4; bdiv=0.0625; st=0; angl=0
 lamp_full = types.LampState.ON; lamp_dull = types.LampState:new(0.5, 0); lamp_off = types.LampState.OFF
 block = blocks.Block:new(3, 3):fill(lamp_dull); frame = frames.Frame:new():add(block, 1, 1)
 -- Attach shado machinery to grid:
-local g = grid.connect()
-local renderer = renderers.VariableBlockRenderer:new(16, 8, g)
+local g = grid.connect(); local r = g.device.rows; local c = g.device.cols
+local renderer = renderers.VariableBlockRenderer:new(r, c, g)
 
 function init()
     renderer:render(frame); clock.run(rotate,bdiv)
@@ -37,6 +37,6 @@ function rotate()
 end
 
 function block:press(x, y, how)
-    if how == 1 then self:setLamp(x,y,lamp_full); centerX=math.random(2,12); centerY=math.random(2,6); engine.rv(1)
+    if how == 1 then self:setLamp(x,y,lamp_full); centerX=math.random(2,r-2); centerY=math.random(2,c-2); engine.rv(1)
     else self:setLamp(x, y, lamp_dull); engine.rv(0) end
 end
